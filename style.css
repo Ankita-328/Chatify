@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(71, 76, 81);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+.container h1{
+    font-size: 10vw;
+    background: linear-gradient(to right,white,rgb(160, 71, 180),rgb(89, 167, 236));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container h2{
+    font-size: 3vw;
+    color: rgb(193, 220, 245);
+}
+.prompt-area{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(71, 76, 81);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 16px;
+}
+#prompt{
+    width: 60%;
+    height: 60%;
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-radius: 30px 0px 0px 30px;
+    background-color: rgb(193, 220, 245);
+    font-size: 20px;
+}
+#btn{
+    width: 10%;
+    height: 60%;
+    border-radius: 0px 30px 30px 0px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s all;
+    background-color:rgb(51, 50, 50);
+}
+#btn:hover{
+    background-color: rgb(77, 77, 77);
+}
+.chat-container{
+    width: 100%;
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.user-chat-box{
+    width: 70%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.user-chat-box p{
+    background-color: rgb(180, 47, 233);
+    border-radius: 12px 12px 0 12px;
+    padding: 5px;
+    font-size: 17px;
+}
+.img{
+    width: 130px;
+    height: 100%;
+}
+.ai-chat-box{
+    width: 70%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.ai-chat-box p{
+    background-color: rgb(220, 162, 243);
+    border-radius: 12px 12px 12px 0;
+    padding: 5px;
+    font-size: 17px;
+}
